@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bengal Chronicle</title>
+<style>
+  :root {
+    box-sizing: border-box;
+    --bg: #F1F0EA;
+    --surface: #FAFAF6;
+    --ink: #17191C;
+    --ink-2: #55574F;
+    --ink-3: #8A8C82;
+    --line: #D9D6C9;
+    --accent: #2C4870;
+    --sw0-bg:#EEEDFE; --sw0-tx:#3C3489;
+    --sw1-bg:#E1F5EE; --sw1-tx:#085041;
+    --sw2-bg:#FAECE7; --sw2-tx:#712B13;
+    --sw3-bg:#FBEAF0; --sw3-tx:#72243E;
+    --sw4-bg:#F1EFE8; --sw4-tx:#5A5B56;
+    --sw5-bg:#E6F1FB; --sw5-tx:#0C447C;
+    --sw6-bg:#EAF3DE; --sw6-tx:#27500A;
+    --sw7-bg:#FAEEDA; --sw7-tx:#633806;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14171B; --surface: #1B1F24; --ink: #EDEDE8; --ink-2: #B7B8B1; --ink-3: #7C7E78;
+      --line: #33362F; --accent: #8FB2E0;
+      --sw0-bg:#3C3489; --sw0-tx:#CECBF6; --sw1-bg:#085041; --sw1-tx:#9FE1CB;
+      --sw2-bg:#712B13; --sw2-tx:#F5C4B3; --sw3-bg:#72243E; --sw3-tx:#F4C0D1;
+      --sw4-bg:#444441; --sw4-tx:#D3D1C7; --sw5-bg:#0C447C; --sw5-tx:#B5D4F4;
+      --sw6-bg:#27500A; --sw6-tx:#C0DD97; --sw7-bg:#633806; --sw7-tx:#FAC775;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #14171B; --surface: #1B1F24; --ink: #EDEDE8; --ink-2: #B7B8B1; --ink-3: #7C7E78;
+    --line: #33362F; --accent: #8FB2E0;
+    --sw0-bg:#3C3489; --sw0-tx:#CECBF6; --sw1-bg:#085041; --sw1-tx:#9FE1CB;
+    --sw2-bg:#712B13; --sw2-tx:#F5C4B3; --sw3-bg:#72243E; --sw3-tx:#F4C0D1;
+    --sw4-bg:#444441; --sw4-tx:#D3D1C7; --sw5-bg:#0C447C; --sw5-tx:#B5D4F4;
+    --sw6-bg:#27500A; --sw6-tx:#C0DD97; --sw7-bg:#633806; --sw7-tx:#FAC775;
+  }
+  * { box-sizing: inherit; }
+  html, body { margin: 0; min-height: 100%; background: var(--bg); }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--ink);
+    padding: 2rem 1.25rem 3rem;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  header { margin-bottom: 1.75rem; }
+  h1 {
+    font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    font-weight: 400;
+    font-size: clamp(28px, 5vw, 36px);
+    margin: 0;
+    letter-spacing: 0.2px;
+  }
+  header p { margin: 4px 0 0; color: var(--ink-2); font-size: 14px; }
+
+  .eras { display: flex; border: 1px solid var(--line); border-radius: 4px; overflow: hidden; margin-bottom: 2px; }
+  .eras span {
+    padding: 6px 8px; font-size: 11px; color: var(--ink-2); border-right: 1px solid var(--line);
+    flex: 0 0 auto; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .eras span:last-child { border-right: none; }
+  .era-a { flex-basis: 40%; } .era-b { flex-basis: 35%; } .era-c { flex-basis: 25%; }
+
+  .slider-row { display: flex; align-items: center; gap: 10px; margin-top: 4px; }
+  .stepper {
+    width: 28px; height: 28px; flex: 0 0 auto; border-radius: 50%; border: 1px solid var(--line);
+    background: var(--surface); color: var(--ink); font-size: 16px; line-height: 1; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .stepper:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+  .stepper:disabled { opacity: 0.35; cursor: default; }
+  .slider-zone { position: relative; flex: 1; }
+  input[type=range] {
+    -webkit-appearance: none; appearance: none; width: 100%; height: 28px; background: transparent; margin: 0; cursor: pointer;
+  }
+  input[type=range]::-webkit-slider-runnable-track { height: 2px; background: var(--line); }
+  input[type=range]::-moz-range-track { height: 2px; background: var(--line); }
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none; appearance: none; width: 16px; height: 16px; border-radius: 50%;
+    background: var(--accent); border: 2px solid var(--surface); margin-top: -7px; cursor: grab;
+  }
+  input[type=range]::-moz-range-thumb {
+    width: 16px; height: 16px; border-radius: 50%; background: var(--accent); border: 2px solid var(--surface); cursor: grab;
+  }
+  .ticks { position: relative; height: 10px; margin-bottom: 4px; }
+  .tick { position: absolute; top: 0; width: 2px; height: 6px; background: var(--ink-3); opacity: 0.5; }
+  .yr-labels { display: flex; justify-content: space-between; font-size: 11px; color: var(--ink-3); margin: 2px 38px 1.75rem; }
+
+  .year-row { display: flex; align-items: baseline; gap: 10px; margin-bottom: 4px; }
+  .year-row .yr { font-family: Georgia, serif; font-size: 40px; color: var(--accent); line-height: 1; }
+  .year-row .count { font-size: 13px; color: var(--ink-2); }
+
+  .key { display: flex; flex-wrap: wrap; gap: 4px 14px; margin: 1.25rem 0 1.5rem; }
+  .key button {
+    background: none; border: none; padding: 0; font: inherit; font-size: 12px; color: var(--ink-2);
+    cursor: pointer; border-bottom: 2px solid transparent; padding-bottom: 2px;
+  }
+  .key button.active { color: var(--ink); font-weight: 500; }
+  .key button .dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; margin-right: 5px; vertical-align: middle; }
+
+  .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; }
+  .thumb { display: none; width: 100%; aspect-ratio: 16/9; }
+  .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .card-body { padding: 14px 16px 16px; }
+  .meta { display: flex; gap: 8px; align-items: center; margin-bottom: 6px; }
+  .tag { font-size: 11px; padding: 2px 8px; border-radius: 3px; }
+  .importance { font-size: 11px; color: var(--ink-3); }
+  .importance.major { color: var(--accent); font-weight: 500; }
+  .card h3 { font-family: Georgia, serif; font-weight: 400; font-size: 17px; margin: 0 0 5px; color: var(--ink); }
+  .card p { margin: 0; font-size: 14px; line-height: 1.55; color: var(--ink-2); }
+  .card .loc { font-size: 12px; color: var(--ink-3); margin-top: 8px; }
+
+  .empty { padding: 2rem 0; color: var(--ink-2); font-size: 14px; }
+  .empty button {
+    background: none; border: none; font: inherit; font-size: 14px; color: var(--accent);
+    text-decoration: underline; cursor: pointer; padding: 0;
+  }
+  .empty .jump { display: flex; gap: 18px; margin-top: 10px; }
+
+  footer { margin-top: 1.5rem; font-size: 12px; color: var(--ink-3); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Bengal Chronicle</h1>
+    <p>Major events in West Bengal, 1757&ndash;2011 &mdash; drag the line, or use the buttons, to change year</p>
+  </header>
+
+  <div class="eras">
+    <span class="era-a">Company rule &middot; 1757&ndash;1858</span>
+    <span class="era-b">Crown rule &middot; 1858&ndash;1947</span>
+    <span class="era-c">Independent India &middot; 1947&ndash;2011</span>
+  </div>
+
+  <div class="slider-row">
+    <button class="stepper" id="dec" aria-label="Previous year">&minus;</button>
+    <div class="slider-zone">
+      <div class="ticks" id="ticks"></div>
+      <input type="range" id="yr" min="1757" max="2011" step="1" value="2000" aria-label="Select year">
+    </div>
+    <button class="stepper" id="inc" aria-label="Next year">&plus;</button>
+  </div>
+  <div class="yr-labels"><span>1757</span><span>2011</span></div>
+
+  <div class="year-row">
+    <span class="yr" id="yr-out">2000</span>
+    <span class="count" id="count-out"></span>
+  </div>
+
+  <div class="key" id="key"></div>
+
+  <div id="results"></div>
+
+  <footer id="foot">32 sample events &middot; JSON-driven, ready to swap in the full dataset</footer>
+</div>
+
+<script>
+// Point this at your own JSON file's path (or URL, if same-origin/CORS-enabled)
+// and it will be loaded instead of the built-in sample data below.
+// e.g. const DATA_URL = "events.json";
+const DATA_URL = "raw.json";
+
+// Each event may optionally include an "image" field (a path or URL).
+// If it's missing, or fails to load, no image section is shown for that card.
+let EVENTS = [
+  {id:"1757-battle-of-plassey", year:1757, date_precision:"year", title:"Battle of Plassey", categories:["colonial_rule","politics","bengal_region"], description:"The East India Company defeated the Nawab of Bengal, Siraj-ud-Daulah, establishing British political control over Bengal that lasted nearly two centuries.", location:{name:"Palashi, Bengal", present_day:"India"}, importance:"major", image:"images/plassey.jpg"},
+  {id:"1765-diwani-grant", year:1765, date_precision:"year", title:"Diwani rights granted to the East India Company", categories:["colonial_rule","economy"], description:"The Mughal emperor granted the Company the right to collect revenue in Bengal, Bihar and Odisha, giving it effective economic control of the region.", location:{name:"Bengal", present_day:"India and Bangladesh"}, importance:"major"},
+  {id:"1773-regulating-act", year:1773, date_precision:"year", title:"Regulating Act creates the Governor-General of Bengal", categories:["colonial_rule","politics"], description:"Parliament established a Governor-General based in Calcutta, beginning direct oversight of Company rule.", location:{name:"Calcutta", present_day:"India"}, importance:"significant"},
+  {id:"1793-permanent-settlement", year:1793, date_precision:"year", title:"Permanent Settlement introduced in Bengal", categories:["economy","colonial_rule"], description:"Governor-General Cornwallis fixed land revenue permanently and created a zamindar landlord class, reshaping rural Bengal for a century.", location:{name:"Bengal", present_day:"India and Bangladesh"}, importance:"major"},
+  {id:"1800-fort-william-college", year:1800, date_precision:"year", title:"Fort William College founded", categories:["education","bengali_language"], description:"Established to train Company officials, its scholars produced early texts that helped standardise modern Bengali prose.", location:{name:"Calcutta", present_day:"India"}, importance:"significant"},
+  {id:"1817-hindu-college", year:1817, date_precision:"year", title:"Hindu College established in Calcutta", categories:["education"], description:"An early home of Western-style liberal education in India, and a seedbed for the Bengal Renaissance.", location:{name:"Calcutta", present_day:"India"}, importance:"significant"},
+  {id:"1828-brahmo-samaj", year:1828, date_precision:"year", title:"Brahmo Samaj founded by Raja Rammohan Roy", categories:["religion","social_reform"], description:"A reformist religious movement that campaigned against practices such as sati and pushed for modern education.", location:{name:"Calcutta", present_day:"India"}, importance:"major"},
+  {id:"1829-sati-abolished", year:1829, date_precision:"year", title:"Sati abolished in Bengal Presidency", categories:["social_reform","politics"], description:"Governor-General Bentinck outlawed sati after years of campaigning by Bengali reformers.", location:{name:"Bengal", present_day:"India and Bangladesh"}, importance:"major"},
+  {id:"1856-widow-remarriage-act", year:1856, date_precision:"year", title:"Hindu Widows' Remarriage Act passed", categories:["social_reform"], description:"Ishwar Chandra Vidyasagar's campaign led to legislation legalising the remarriage of Hindu widows.", location:{name:"Bengal", present_day:"India and Bangladesh"}, importance:"significant"},
+  {id:"1857-calcutta-university", year:1857, date_precision:"year", title:"University of Calcutta established", categories:["education"], description:"One of the first modern universities in Asia, it became a centre of Bengali intellectual life for generations.", location:{name:"Calcutta", present_day:"India"}, importance:"major"},
+  {id:"1859-indigo-revolt", year:1859, date_precision:"year", title:"Indigo Revolt spreads across Bengal", categories:["economy","politics"], description:"Peasants refused to grow indigo under coercive contracts, an early instance of organised agrarian resistance.", location:{name:"Bengal", present_day:"India and Bangladesh"}, importance:"significant"},
+  {id:"1861-tagore-born", year:1861, date_precision:"year", title:"Rabindranath Tagore born in Calcutta", categories:["literature","culture","bengali_people"], description:"Tagore would reshape Bengali poetry, music and prose, becoming the language's most influential literary figure.", location:{name:"Calcutta", present_day:"India"}, importance:"major", image:"images/tagore.jpg"},
+  {id:"1882-anandamath", year:1882, date_precision:"year", title:"Bankim Chandra publishes Anandamath", categories:["literature","bengali_language"], description:"The novel introduced a song that became an anthem of the independence movement, cementing its author's influence on Bengali fiction.", location:{name:"Bengal", present_day:"India and Bangladesh"}, importance:"significant"},
+  {id:"1905-partition-of-bengal", year:1905, date_precision:"year", title:"Partition of Bengal announced", categories:["politics","bengal_region"], description:"Viceroy Curzon divided the Bengal Presidency along religious lines, provoking mass protest.", location:{name:"Bengal", present_day:"India and Bangladesh"}, importance:"major"},
+  {id:"1906-swadeshi-movement", year:1906, date_precision:"year", title:"Swadeshi movement intensifies", categories:["politics","economy"], description:"Opposition to partition grew into a boycott of British goods and promotion of indigenous industry.", location:{name:"Bengal", present_day:"India and Bangladesh"}, importance:"major"},
+  {id:"1911-partition-annulled", year:1911, date_precision:"year", title:"Partition annulled; capital shifts to Delhi", categories:["politics","bengal_region"], description:"The British reunified Bengal after sustained protest, and moved British India's capital from Calcutta to Delhi.", location:{name:"Calcutta", present_day:"India"}, importance:"major"},
+  {id:"1913-tagore-nobel", year:1913, date_precision:"year", title:"Rabindranath Tagore wins the Nobel Prize in Literature", categories:["literature","bengali_people","culture"], description:"The first non-European Nobel literature laureate, bringing international recognition to Bengali letters.", location:{name:"Bengal", present_day:"India and Bangladesh"}, importance:"major"},
+  {id:"1920-non-cooperation-bengal", year:1920, date_precision:"year", title:"Non-cooperation movement gains ground in Bengal", categories:["politics"], description:"Bengal became a major centre of Gandhi's campaign, with wide participation from students, lawyers and workers.", location:{name:"Bengal", present_day:"India and Bangladesh"}, importance:"significant"},
+  {id:"1930-chittagong-armoury-raid", year:1930, date_precision:"year", title:"Chittagong armoury raid", categories:["politics","colonial_rule"], description:"Revolutionaries led by Surya Sen raided the colonial armoury, a notable armed action against British rule.", location:{name:"Chittagong", present_day:"Bangladesh"}, importance:"significant"},
+  {id:"1937-fazlul-huq-premier", year:1937, date_precision:"year", title:"A.K. Fazlul Huq becomes Premier of Bengal", categories:["politics"], description:"Following Bengal's first provincial elections, Fazlul Huq formed its first elected government.", location:{name:"Bengal", present_day:"India and Bangladesh"}, importance:"significant"},
+  {id:"1943-bengal-famine", year:1943, date_precision:"year", title:"Bengal famine causes mass suffering", categories:["economy","colonial_rule"], description:"Wartime policy failures, disrupted trade and crop losses led to a famine with an enormous loss of life across rural Bengal.", location:{name:"Bengal", present_day:"India and Bangladesh"}, importance:"major"},
+  {id:"1946-direct-action-day", year:1946, date_precision:"year", title:"Direct Action Day unrest in Calcutta", categories:["politics"], description:"Communal violence broke out following a call for direct action over the demand for Pakistan, foreshadowing the following year's Partition.", location:{name:"Calcutta", present_day:"India"}, importance:"major"},
+  {id:"1947-partition-of-bengal-independence", year:1947, date_precision:"year", title:"Bengal partitioned at Indian independence", categories:["politics","bengal_region"], description:"Bengal was divided between India and Pakistan into West Bengal and East Bengal, triggering large-scale population movement.", location:{name:"Bengal", present_day:"India and Bangladesh"}, importance:"major"},
+  {id:"1952-language-movement", year:1952, date_precision:"year", title:"Bengali language movement in East Bengal", categories:["bengali_language","politics"], description:"Student-led protests in Dhaka demanding recognition of Bengali as a state language became a defining moment for Bengali identity.", location:{name:"Dhaka", present_day:"Bangladesh"}, importance:"major"},
+  {id:"1967-naxalbari-uprising", year:1967, date_precision:"year", title:"Naxalbari uprising begins", categories:["politics"], description:"A peasant revolt in Naxalbari gave its name to the wider movement that shaped West Bengal's politics for decades.", location:{name:"Naxalbari, West Bengal", present_day:"India"}, importance:"major"},
+  {id:"1971-liberation-war-refugees", year:1971, date_precision:"year", title:"Bangladesh Liberation War brings refugee crisis to West Bengal", categories:["politics","bengal_region"], description:"Millions crossed into West Bengal during the war, straining the state and shaping its politics and society.", location:{name:"West Bengal", present_day:"India"}, importance:"major"},
+  {id:"1977-left-front-wins", year:1977, date_precision:"year", title:"Left Front wins West Bengal election", categories:["politics"], description:"The victory began 34 uninterrupted years in power, then the longest run of any elected communist-led government in the world.", location:{name:"West Bengal", present_day:"India"}, importance:"major"},
+  {id:"1992-ray-honorary-oscar", year:1992, date_precision:"year", title:"Satyajit Ray receives an Honorary Academy Award", categories:["cinema","culture","bengali_people"], description:"Honoured for his lifetime contribution to cinema shortly before his death, capping a career that brought Bengali film to a global audience.", location:{name:"Calcutta", present_day:"India"}, importance:"major"},
+  {id:"2000-bengali-global-literature", year:2000, date_precision:"year", title:"Bengali literature enters the digital era", categories:["bengali_language","literature","culture","technology"], description:"The expansion of the internet and digital publishing began creating new ways for Bengali literature, newspapers and cultural material to circulate globally. Bengali increasingly became part of the emerging digital information space.", location:{name:"Bengal", present_day:"India and Bangladesh"}, importance:"significant"},
+  {id:"2006-singur-land-controversy", year:2006, date_precision:"year", title:"Singur land acquisition controversy begins", categories:["politics","economy"], description:"Land acquired for a car factory triggered farmer protests that became a flashpoint over industrialisation and land rights.", location:{name:"Singur, West Bengal", present_day:"India"}, importance:"significant"},
+  {id:"2007-nandigram-unrest", year:2007, date_precision:"year", title:"Nandigram unrest over land acquisition", categories:["politics"], description:"Clashes over a planned industrial project intensified opposition to the state government's land policies.", location:{name:"Nandigram, West Bengal", present_day:"India"}, importance:"significant"},
+  {id:"2011-west-bengal-political-transition", year:2011, date_precision:"year", title:"Political transition in West Bengal", categories:["bengal_region","bengali_people","politics"], description:"The 2011 West Bengal Assembly election ended more than three decades of uninterrupted Left Front government in the state. The change marked a major political transition in contemporary West Bengal.", location:{name:"West Bengal", present_day:"India"}, importance:"major"}
+];
+
+const MIN_YEAR = 1757, MAX_YEAR = 2011;
+let categories = [];
+const activeCats = new Set();
+let sortedYears = [];
+
+const slider = document.getElementById('yr');
+const yrOut = document.getElementById('yr-out');
+const countOut = document.getElementById('count-out');
+const resultsEl = document.getElementById('results');
+const keyEl = document.getElementById('key');
+const ticksEl = document.getElementById('ticks');
+const decBtn = document.getElementById('dec');
+const incBtn = document.getElementById('inc');
+
+function label(str) { return str.replace(/_/g, ' '); }
+
+function buildKey() {
+  const all = document.createElement('button');
+  all.textContent = 'All categories';
+  all.onclick = () => { activeCats.clear(); render(); buildKey(); };
+  keyEl.innerHTML = '';
+  keyEl.appendChild(all);
+  if (activeCats.size === 0) all.classList.add('active');
+  categories.forEach((cat, i) => {
+    const b = document.createElement('button');
+    const dot = document.createElement('span');
+    dot.className = 'dot';
+    dot.style.background = `var(--sw${i % 8}-tx)`;
+    b.appendChild(dot);
+    b.appendChild(document.createTextNode(label(cat)));
+    if (activeCats.has(cat)) b.classList.add('active');
+    b.onclick = () => {
+      activeCats.has(cat) ? activeCats.delete(cat) : activeCats.add(cat);
+      render(); buildKey();
+    };
+    keyEl.appendChild(b);
+  });
+}
+
+function buildTicks() {
+  ticksEl.innerHTML = '';
+  sortedYears.forEach(y => {
+    const t = document.createElement('div');
+    t.className = 'tick';
+    t.style.left = ((y - MIN_YEAR) / (MAX_YEAR - MIN_YEAR) * 100) + '%';
+    ticksEl.appendChild(t);
+  });
+}
+
+function nearestYears(year) {
+  const prev = [...sortedYears].reverse().find(y => y < year);
+  const next = sortedYears.find(y => y > year);
+  return { prev, next };
+}
+
+function setYear(y) {
+  slider.value = Math.max(MIN_YEAR, Math.min(MAX_YEAR, y));
+  render();
+}
+
+function render() {
+  const year = parseInt(slider.value, 10);
+  yrOut.textContent = year;
+  decBtn.disabled = year <= MIN_YEAR;
+  incBtn.disabled = year >= MAX_YEAR;
+
+  const inYear = EVENTS.filter(e => e.year === year);
+  const filtered = activeCats.size === 0 ? inYear : inYear.filter(e => e.categories.some(c => activeCats.has(c)));
+  countOut.textContent = filtered.length ? `${filtered.length} event${filtered.length > 1 ? 's' : ''}` : '';
+
+  resultsEl.innerHTML = '';
+  if (filtered.length) {
+    const grid = document.createElement('div');
+    grid.className = 'card-grid';
+    filtered.forEach(e => {
+      const card = document.createElement('div');
+      card.className = 'card';
+
+      if (e.image) {
+        const thumb = document.createElement('div');
+        thumb.className = 'thumb';
+        const img = document.createElement('img');
+        img.alt = e.title;
+        img.loading = 'lazy';
+        img.onload = () => { thumb.style.display = 'block'; };
+        img.onerror = () => { thumb.remove(); };
+        img.src = e.image;
+        thumb.appendChild(img);
+        card.appendChild(thumb);
+      }
+
+      const catIdx = Math.max(0, categories.indexOf(e.categories[0])) % 8;
+      const body = document.createElement('div');
+      body.className = 'card-body';
+      body.innerHTML = `
+        <div class="meta">
+          <span class="tag" style="background:var(--sw${catIdx}-bg); color:var(--sw${catIdx}-tx);">${label(e.categories[0])}</span>
+          <span class="importance ${e.importance}">${e.importance}</span>
+        </div>
+        <h3>${e.title}</h3>
+        <p>${e.description}</p>
+        <div class="loc">${e.location.name} &middot; present-day ${e.location.present_day}</div>`;
+      card.appendChild(body);
+      grid.appendChild(card);
+    });
+    resultsEl.appendChild(grid);
+  } else {
+    const div = document.createElement('div');
+    div.className = 'empty';
+    if (inYear.length && activeCats.size) {
+      div.innerHTML = `No events in ${year} match the selected categories.`;
+      const clear = document.createElement('button');
+      clear.textContent = 'Clear filters';
+      clear.style.marginLeft = '6px';
+      clear.onclick = () => { activeCats.clear(); render(); buildKey(); };
+      div.appendChild(clear);
+    } else {
+      const { prev, next } = nearestYears(year);
+      div.innerHTML = `No recorded events for ${year} yet.`;
+      const jump = document.createElement('div');
+      jump.className = 'jump';
+      if (prev) {
+        const b = document.createElement('button');
+        b.textContent = `\u2190 ${prev}`;
+        b.onclick = () => setYear(prev);
+        jump.appendChild(b);
+      }
+      if (next) {
+        const b = document.createElement('button');
+        b.textContent = `${next} \u2192`;
+        b.onclick = () => setYear(next);
+        jump.appendChild(b);
+      }
+      div.appendChild(jump);
+    }
+    resultsEl.appendChild(div);
+  }
+}
+
+function init() {
+  categories = [...new Set(EVENTS.flatMap(e => e.categories))];
+  sortedYears = [...new Set(EVENTS.map(e => e.year))].sort((a, b) => a - b);
+  buildKey();
+  buildTicks();
+  render();
+}
+
+decBtn.onclick = () => setYear(parseInt(slider.value, 10) - 1);
+incBtn.onclick = () => setYear(parseInt(slider.value, 10) + 1);
+slider.addEventListener('input', render);
+
+if (DATA_URL) {
+  fetch(DATA_URL).then(r => r.ok ? r.json() : Promise.reject()).then(data => { EVENTS = data; init(); }).catch(() => init());
+} else {
+  init();
+}
+</script>
+</body>
+</html>

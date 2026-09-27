@@ -1,0 +1,913 @@
+[
+  {
+    "id": "1757-battle-of-plassey",
+    "year": 1757,
+    "date": "1757-06-23",
+    "date_precision": "day",
+    "title": "Battle of Plassey",
+    "image_path": "",
+    "categories": ["bengal_region", "politics", "colonial_history", "war"],
+    "description": "The East India Company defeated Nawab Siraj ud-Daulah at Plassey. The battle became a decisive turning point in Bengal's political history and enabled the Company to establish growing control over the region.",
+    "location": {
+      "name": "Plassey",
+      "present_day": "West Bengal, India"
+    },
+    "people": ["siraj-ud-daulah", "robert-clive"],
+    "importance": "major"
+  },
+  {
+    "id": "1764-battle-of-buxar",
+    "year": 1764,
+    "date": "1764-10-22",
+    "date_precision": "day",
+    "title": "Battle of Buxar",
+    "image_path": "",
+    "categories": ["bengal_region", "politics", "colonial_history", "war"],
+    "description": "The East India Company defeated the combined forces of Mir Qasim, Shuja-ud-Daula and Mughal emperor Shah Alam II. The victory consolidated Company military power in Bengal and northern India.",
+    "location": {
+      "name": "Buxar",
+      "present_day": "Bihar, India"
+    },
+    "people": ["mir-qasim", "shah-alam-ii"],
+    "importance": "major"
+  },
+  {
+    "id": "1765-diwani-rights",
+    "year": 1765,
+    "date": "1765-08-12",
+    "date_precision": "day",
+    "title": "East India Company receives Diwani rights",
+    "image_path": "",
+    "categories": ["bengal_region", "politics", "colonial_history", "economy"],
+    "description": "Mughal emperor Shah Alam II granted the East India Company the Diwani rights of Bengal, Bihar and Orissa. This gave the Company authority over revenue collection in much of eastern India.",
+    "location": {
+      "name": "Bengal",
+      "present_day": "India and Bangladesh"
+    },
+    "people": ["shah-alam-ii", "robert-clive"],
+    "importance": "major"
+  },
+  {
+    "id": "1770-bengal-famine",
+    "year": 1770,
+    "date_precision": "year",
+    "title": "Great Bengal Famine",
+    "image_path": "",
+    "categories": ["bengal_region", "colonial_history", "economy", "social_history"],
+    "description": "A catastrophic famine struck Bengal after crop failures and severe economic and administrative pressures. Contemporary and later estimates indicate an enormous loss of life across the affected region.",
+    "location": {
+      "name": "Bengal",
+      "present_day": "India and Bangladesh"
+    },
+    "importance": "major"
+  },
+  {
+    "id": "1772-calcutta-administrative-centre",
+    "year": 1772,
+    "date_precision": "year",
+    "title": "Calcutta becomes the centre of Company administration",
+    "image_path": "",
+    "categories": ["bengal_region", "colonial_history", "urban_history"],
+    "description": "Calcutta became the principal centre of East India Company administration in Bengal. Its political, commercial and intellectual importance grew rapidly during the following century.",
+    "location": {
+      "name": "Calcutta",
+      "present_day": "Kolkata, West Bengal, India"
+    },
+    "importance": "major"
+  },
+  {
+    "id": "1793-permanent-settlement",
+    "year": 1793,
+    "date_precision": "year",
+    "title": "Permanent Settlement of Bengal",
+    "image_path": "",
+    "categories": ["bengal_region", "colonial_history", "economy"],
+    "description": "The Permanent Settlement established a new land-revenue system in Bengal and recognised zamindars as hereditary landholders subject to fixed revenue obligations. It profoundly influenced Bengal's rural social and economic structure.",
+    "location": {
+      "name": "Bengal Presidency",
+      "present_day": "India and Bangladesh"
+    },
+    "people": ["charles-cornwallis"],
+    "importance": "major"
+  },
+  {
+    "id": "1800-fort-william-college",
+    "year": 1800,
+    "date_precision": "year",
+    "title": "Fort William College established",
+    "image_path": "",
+    "categories": ["bengali_language", "education", "colonial_history"],
+    "description": "Fort William College was established in Calcutta to train Company officials in Indian languages. Its activities contributed to the development and standardisation of modern prose in several Indian languages, including Bengali.",
+    "location": {
+      "name": "Calcutta",
+      "present_day": "Kolkata, West Bengal, India"
+    },
+    "importance": "significant"
+  },
+  {
+    "id": "1817-hindu-college",
+    "year": 1817,
+    "date_precision": "year",
+    "title": "Hindu College established",
+    "image_path": "",
+    "categories": ["bengal_region", "education", "bengal_renaissance"],
+    "description": "Hindu College was established in Calcutta with the support of Indian reformers and European educators. It became an important centre for Western-style education and intellectual change in 19th-century Bengal.",
+    "location": {
+      "name": "Calcutta",
+      "present_day": "Kolkata, West Bengal, India"
+    },
+    "people": ["raja-ram-mohan-roy", "david-hare"],
+    "importance": "major"
+  },
+  {
+    "id": "1820-vidyasagar-birth",
+    "year": 1820,
+    "date": "1820-09-26",
+    "date_precision": "day",
+    "title": "Birth of Ishwar Chandra Vidyasagar",
+    "image_path": "",
+    "categories": ["bengali_people", "education", "social_reform", "bengali_language"],
+    "description": "Ishwar Chandra Vidyasagar was born in Birsingha. He later became an influential educator, Sanskrit scholar, social reformer and important contributor to the development of modern Bengali prose.",
+    "location": {
+      "name": "Birsingha",
+      "present_day": "West Bengal, India"
+    },
+    "people": ["ishwar-chandra-vidyasagar"],
+    "importance": "major"
+  },
+  {
+    "id": "1824-michael-madhusudan-birth",
+    "year": 1824,
+    "date": "1824-01-25",
+    "date_precision": "day",
+    "title": "Birth of Michael Madhusudan Dutt",
+    "image_path": "",
+    "categories": ["bengali_people", "bengali_language", "literature"],
+    "description": "Michael Madhusudan Dutt was born in Sagardari. He became a major figure in modern Bengali poetry and introduced new forms, themes and influences into Bengali literature.",
+    "location": {
+      "name": "Sagardari",
+      "present_day": "Khulna Division, Bangladesh"
+    },
+    "people": ["michael-madhusudan-dutt"],
+    "importance": "major"
+  },
+  {
+    "id": "1828-brahmo-samaj",
+    "year": 1828,
+    "date_precision": "year",
+    "title": "Brahmo Samaj established",
+    "image_path": "",
+    "categories": ["bengal_region", "social_reform", "religion", "bengal_renaissance"],
+    "description": "Raja Ram Mohan Roy established the Brahmo Sabha in Calcutta, later known as the Brahmo Samaj. It became an important centre of religious and social reform in Bengal.",
+    "location": {
+      "name": "Calcutta",
+      "present_day": "Kolkata, West Bengal, India"
+    },
+    "people": ["raja-ram-mohan-roy"],
+    "importance": "major"
+  },
+  {
+    "id": "1829-sati-abolition",
+    "year": 1829,
+    "date": "1829-12-04",
+    "date_precision": "day",
+    "title": "Abolition of Sati in British India",
+    "image_path": "",
+    "categories": ["bengal_region", "social_reform", "colonial_history"],
+    "description": "The Bengal Sati Regulation prohibited the practice of sati in territories under the Bengal Presidency. Raja Ram Mohan Roy had campaigned strongly against the practice.",
+    "location": {
+      "name": "Bengal Presidency",
+      "present_day": "Eastern India and Bangladesh"
+    },
+    "people": ["raja-ram-mohan-roy", "william-bentinck"],
+    "importance": "major"
+  },
+  {
+    "id": "1838-bankim-birth",
+    "year": 1838,
+    "date": "1838-06-27",
+    "date_precision": "day",
+    "title": "Birth of Bankim Chandra Chattopadhyay",
+    "image_path": "",
+    "categories": ["bengali_people", "bengali_language", "literature"],
+    "description": "Bankim Chandra Chattopadhyay was born in Naihati. He became one of the central figures in the development of the modern Bengali novel and Bengali prose.",
+    "location": {
+      "name": "Naihati",
+      "present_day": "West Bengal, India"
+    },
+    "people": ["bankim-chandra-chattopadhyay"],
+    "importance": "major"
+  },
+  {
+    "id": "1847-vidyasagar-bengali-education",
+    "year": 1847,
+    "date_precision": "year",
+    "title": "Vidyasagar's work on Bengali education and prose",
+    "image_path": "",
+    "categories": ["bengali_language", "education", "literature"],
+    "description": "Ishwar Chandra Vidyasagar's educational work and Bengali textbooks helped establish clearer prose, spelling and pedagogical conventions. His later Barnaparichay became one of the best-known Bengali primers.",
+    "location": {
+      "name": "Calcutta",
+      "present_day": "Kolkata, West Bengal, India"
+    },
+    "people": ["ishwar-chandra-vidyasagar"],
+    "importance": "significant"
+  },
+  {
+    "id": "1856-hindu-widow-remarriage",
+    "year": 1856,
+    "date": "1856-07-26",
+    "date_precision": "day",
+    "title": "Hindu Widows' Remarriage Act",
+    "image_path": "",
+    "categories": ["bengal_region", "social_reform", "colonial_history"],
+    "description": "The Hindu Widows' Remarriage Act legalised widow remarriage among Hindus under British Indian law. Ishwar Chandra Vidyasagar was a leading advocate for the reform.",
+    "location": {
+      "name": "Bengal Presidency",
+      "present_day": "India and Bangladesh"
+    },
+    "people": ["ishwar-chandra-vidyasagar"],
+    "importance": "major"
+  },
+  {
+    "id": "1857-rebellion-bengal",
+    "year": 1857,
+    "date_precision": "year",
+    "title": "Indian Rebellion of 1857 in Bengal",
+    "image_path": "",
+    "categories": ["bengal_region", "colonial_history", "war", "politics"],
+    "description": "The rebellion against Company rule reached several parts of Bengal and eastern India. Its failure led to the end of East India Company rule and the establishment of direct British Crown rule.",
+    "location": {
+      "name": "Bengal Presidency",
+      "present_day": "India and Bangladesh"
+    },
+    "importance": "major"
+  },
+  {
+    "id": "1858-british-crown-rule",
+    "year": 1858,
+    "date_precision": "year",
+    "title": "Beginning of direct British Crown rule",
+    "image_path": "",
+    "categories": ["bengal_region", "colonial_history", "politics"],
+    "description": "Following the rebellion of 1857, the British Crown assumed direct control over India. Bengal remained one of the most important administrative, economic and intellectual regions of British India.",
+    "location": {
+      "name": "Bengal",
+      "present_day": "India and Bangladesh"
+    },
+    "importance": "major"
+  },
+  {
+    "id": "1861-rabindranath-birth",
+    "year": 1861,
+    "date": "1861-05-07",
+    "date_precision": "day",
+    "title": "Birth of Rabindranath Tagore",
+    "image_path": "",
+    "categories": ["bengali_people", "bengali_language", "literature", "culture"],
+    "description": "Rabindranath Tagore was born in Calcutta. He became one of the most influential figures in Bengali literature, music and culture and later received the Nobel Prize in Literature.",
+    "location": {
+      "name": "Calcutta",
+      "present_day": "Kolkata, West Bengal, India"
+    },
+    "people": ["rabindranath-tagore"],
+    "importance": "major"
+  },
+  {
+    "id": "1863-vivekananda-birth",
+    "year": 1863,
+    "date": "1863-01-12",
+    "date_precision": "day",
+    "title": "Birth of Swami Vivekananda",
+    "image_path": "",
+    "categories": ["bengali_people", "religion", "bengal_renaissance"],
+    "description": "Swami Vivekananda was born in Calcutta. He became an important religious and cultural figure and played a significant role in presenting Indian philosophical traditions internationally.",
+    "location": {
+      "name": "Calcutta",
+      "present_day": "Kolkata, West Bengal, India"
+    },
+    "people": ["swami-vivekananda"],
+    "importance": "major"
+  },
+  {
+    "id": "1876-sarat-chandra-birth",
+    "year": 1876,
+    "date": "1876-09-15",
+    "date_precision": "day",
+    "title": "Birth of Sarat Chandra Chattopadhyay",
+    "image_path": "",
+    "categories": ["bengali_people", "bengali_language", "literature"],
+    "description": "Sarat Chandra Chattopadhyay was born in Debanandapur. He later became one of the most widely read Bengali novelists, writing extensively about society, relationships and ordinary lives.",
+    "location": {
+      "name": "Debanandapur",
+      "present_day": "West Bengal, India"
+    },
+    "people": ["sarat-chandra-chattopadhyay"],
+    "importance": "major"
+  },
+  {
+    "id": "1885-indian-national-congress",
+    "year": 1885,
+    "date_precision": "year",
+    "title": "Indian National Congress founded",
+    "image_path": "",
+    "categories": ["bengal_region", "politics", "independence_movement"],
+    "description": "The Indian National Congress was founded in Bombay, beginning a major phase of organised Indian nationalism. Bengal subsequently became one of the principal centres of the nationalist movement.",
+    "location": {
+      "name": "Bombay",
+      "present_day": "Mumbai, Maharashtra, India"
+    },
+    "importance": "significant"
+  },
+  {
+    "id": "1893-vivekananda-chicago",
+    "year": 1893,
+    "date": "1893-09-11",
+    "date_precision": "day",
+    "title": "Vivekananda speaks at the Parliament of Religions",
+    "image_path": "",
+    "categories": ["bengali_people", "religion", "culture"],
+    "description": "Swami Vivekananda addressed the World's Parliament of Religions in Chicago. His appearance brought a Bengali-born Indian religious thinker to international attention.",
+    "location": {
+      "name": "Chicago",
+      "present_day": "Illinois, USA"
+    },
+    "people": ["swami-vivekananda"],
+    "importance": "significant"
+  },
+  {
+    "id": "1897-ramakrishna-mission",
+    "year": 1897,
+    "date": "1897-05-01",
+    "date_precision": "day",
+    "title": "Ramakrishna Mission founded",
+    "image_path": "",
+    "categories": ["bengal_region", "religion", "culture", "social_reform"],
+    "description": "Swami Vivekananda founded the Ramakrishna Mission in Calcutta. The organisation combined spiritual activities with education, healthcare and social service.",
+    "location": {
+      "name": "Calcutta",
+      "present_day": "Kolkata, West Bengal, India"
+    },
+    "people": ["swami-vivekananda"],
+    "importance": "major"
+  },
+  {
+    "id": "1901-santiniketan-school",
+    "year": 1901,
+    "date_precision": "year",
+    "title": "Tagore establishes his school at Santiniketan",
+    "image_path": "",
+    "categories": ["bengali_people", "education", "culture", "bengali_language"],
+    "description": "Rabindranath Tagore established a school at Santiniketan based on an educational philosophy centred on nature, creativity and learning beyond conventional classroom structures.",
+    "location": {
+      "name": "Santiniketan",
+      "present_day": "West Bengal, India"
+    },
+    "people": ["rabindranath-tagore"],
+    "importance": "major"
+  },
+  {
+    "id": "1905-partition-of-bengal",
+    "year": 1905,
+    "date": "1905-10-16",
+    "date_precision": "day",
+    "title": "First Partition of Bengal",
+    "image_path": "",
+    "categories": ["bengal_region", "bengali_people", "politics", "colonial_history"],
+    "description": "The British government divided Bengal and created the province of Eastern Bengal and Assam. The decision triggered widespread opposition, including the Swadeshi and boycott movements.",
+    "location": {
+      "name": "Bengal Presidency",
+      "present_day": "India and Bangladesh"
+    },
+    "people": ["lord-curzon"],
+    "importance": "major"
+  },
+  {
+    "id": "1905-swadeshi-movement",
+    "year": 1905,
+    "date": "1905-08-07",
+    "date_precision": "day",
+    "title": "Swadeshi Movement in Bengal",
+    "image_path": "",
+    "categories": ["bengali_people", "bengal_region", "politics", "independence_movement"],
+    "description": "The partition of Bengal stimulated the Swadeshi movement, which promoted boycotts of imported goods and encouraged indigenous industry and education. Bengal became a major centre of anti-colonial political mobilisation.",
+    "location": {
+      "name": "Calcutta",
+      "present_day": "Kolkata, West Bengal, India"
+    },
+    "people": ["rabindranath-tagore", "arobindo-ghose"],
+    "importance": "major"
+  },
+  {
+    "id": "1906-muslim-league",
+    "year": 1906,
+    "date": "1906-12-30",
+    "date_precision": "day",
+    "title": "All-India Muslim League founded in Dhaka",
+    "image_path": "",
+    "categories": ["bengal_region", "politics", "bengali_people"],
+    "description": "The All-India Muslim League was founded during a meeting in Dhaka. It later became a major political force in the movement that resulted in the creation of Pakistan.",
+    "location": {
+      "name": "Dhaka",
+      "present_day": "Bangladesh"
+    },
+    "importance": "major"
+  },
+  {
+    "id": "1911-partition-annulled",
+    "year": 1911,
+    "date_precision": "year",
+    "title": "Partition of Bengal annulled",
+    "image_path": "",
+    "categories": ["bengal_region", "politics", "colonial_history"],
+    "description": "The British government annulled the 1905 partition of Bengal. At the same time, the capital of British India was moved from Calcutta to Delhi.",
+    "location": {
+      "name": "Delhi and Bengal",
+      "present_day": "India"
+    },
+    "people": ["george-v"],
+    "importance": "major"
+  },
+  {
+    "id": "1913-tagore-nobel",
+    "year": 1913,
+    "date_precision": "year",
+    "title": "Rabindranath Tagore receives Nobel Prize in Literature",
+    "image_path": "",
+    "categories": ["bengali_people", "bengali_language", "literature"],
+    "description": "Rabindranath Tagore received the Nobel Prize in Literature. He became the first Asian Nobel laureate and Bengali literature gained unprecedented international recognition.",
+    "location": {
+      "name": "Bengal",
+      "present_day": "India and Bangladesh"
+    },
+    "people": ["rabindranath-tagore"],
+    "importance": "major"
+  },
+  {
+    "id": "1919-nazrul-emerges",
+    "year": 1919,
+    "date_precision": "year",
+    "title": "Kazi Nazrul Islam emerges in Bengali literary life",
+    "image_path": "",
+    "categories": ["bengali_people", "bengali_language", "literature"],
+    "description": "Kazi Nazrul Islam's early literary and journalistic work began gaining attention around this period. He would become one of the most influential Bengali poets of the 20th century.",
+    "location": {
+      "name": "Calcutta",
+      "present_day": "Kolkata, West Bengal, India"
+    },
+    "people": ["kazi-nazrul-islam"],
+    "importance": "significant"
+  },
+  {
+    "id": "1921-university-of-dhaka",
+    "year": 1921,
+    "date_precision": "year",
+    "title": "University of Dhaka established",
+    "image_path": "",
+    "categories": ["bengali_people", "education", "bengal_region"],
+    "description": "The University of Dhaka was established in British Bengal. It became an important centre of education and later played a major role in the cultural and political history of East Bengal.",
+    "location": {
+      "name": "Dhaka",
+      "present_day": "Bangladesh"
+    },
+    "importance": "major"
+  },
+  {
+    "id": "1922-bidrohi",
+    "year": 1922,
+    "date": "1922-08-06",
+    "date_precision": "day",
+    "title": "Nazrul's Bidrohi and the rise of the Rebel Poet",
+    "image_path": "",
+    "categories": ["bengali_language", "bengali_people", "literature"],
+    "description": "Kazi Nazrul Islam's poem Bidrohi became a landmark of modern Bengali poetry. His writing introduced powerful themes of rebellion, equality and resistance.",
+    "location": {
+      "name": "Calcutta",
+      "present_day": "Kolkata, West Bengal, India"
+    },
+    "people": ["kazi-nazrul-islam"],
+    "importance": "major"
+  },
+  {
+    "id": "1930-chittagong-armoury-raid",
+    "year": 1930,
+    "date": "1930-04-18",
+    "date_precision": "day",
+    "title": "Chittagong Armoury Raid",
+    "image_path": "",
+    "categories": ["bengali_people", "bengal_region", "independence_movement", "war"],
+    "description": "Surya Sen and revolutionary associates attacked British armouries in Chittagong. The raid became one of the best-known episodes of Bengal's revolutionary anti-colonial movement.",
+    "location": {
+      "name": "Chittagong",
+      "present_day": "Bangladesh"
+    },
+    "people": ["surya-sen"],
+    "importance": "major"
+  },
+  {
+    "id": "1936-pather-panchali",
+    "year": 1936,
+    "date_precision": "year",
+    "title": "Publication of Pather Panchali",
+    "image_path": "",
+    "categories": ["bengali_language", "literature", "culture"],
+    "description": "Bibhutibhushan Bandyopadhyay's Pather Panchali was published as a novel. Its depiction of rural Bengal became a landmark of modern Bengali literature.",
+    "location": {
+      "name": "Bengal",
+      "present_day": "West Bengal, India"
+    },
+    "people": ["bibhutibhushan-bandyopadhyay"],
+    "importance": "major"
+  },
+  {
+    "id": "1943-bengal-famine",
+    "year": 1943,
+    "date_precision": "year",
+    "title": "Bengal Famine",
+    "image_path": "",
+    "categories": ["bengal_region", "social_history", "colonial_history", "economy"],
+    "description": "A devastating famine struck Bengal during the Second World War. Food availability, wartime policies, inflation, distribution problems and other factors contributed to a severe humanitarian disaster.",
+    "location": {
+      "name": "Bengal",
+      "present_day": "India and Bangladesh"
+    },
+    "importance": "major"
+  },
+  {
+    "id": "1946-great-calcutta-killings",
+    "year": 1946,
+    "date": "1946-08-16",
+    "date_precision": "day",
+    "title": "Great Calcutta Killings",
+    "image_path": "",
+    "categories": ["bengal_region", "bengali_people", "politics", "communal_violence"],
+    "description": "Communal violence erupted in Calcutta following Direct Action Day. Thousands were killed or injured, deepening political and communal tensions in Bengal shortly before Partition.",
+    "location": {
+      "name": "Calcutta",
+      "present_day": "Kolkata, West Bengal, India"
+    },
+    "importance": "major"
+  },
+  {
+    "id": "1947-partition-of-bengal",
+    "year": 1947,
+    "date": "1947-08-15",
+    "date_precision": "day",
+    "title": "Partition of Bengal",
+    "image_path": "",
+    "categories": ["bengal_region", "bengali_people", "politics", "partition", "migration"],
+    "description": "The end of British rule divided Bengal into West Bengal, which joined India, and East Bengal, which joined Pakistan. The partition caused large-scale migration and permanently changed Bengal's political geography.",
+    "location": {
+      "name": "Bengal",
+      "present_day": "India and Bangladesh"
+    },
+    "importance": "major"
+  },
+  {
+    "id": "1947-radcliffe-line",
+    "year": 1947,
+    "date": "1947-08-17",
+    "date_precision": "day",
+    "title": "Radcliffe boundary announced",
+    "image_path": "",
+    "categories": ["bengal_region", "partition", "migration", "politics"],
+    "description": "The boundary between India and Pakistan in Bengal was formally announced through the Radcliffe Award. The new border divided communities, districts, transport networks and economic regions.",
+    "location": {
+      "name": "Bengal",
+      "present_day": "India and Bangladesh"
+    },
+    "people": ["cyril-radcliffe"],
+    "importance": "major"
+  },
+  {
+    "id": "1948-bengali-language-movement",
+    "year": 1948,
+    "date_precision": "year",
+    "title": "Bengali Language Movement begins",
+    "image_path": "",
+    "categories": ["bengali_language", "bengali_people", "politics"],
+    "description": "After the creation of Pakistan, demands grew in East Bengal for Bengali to receive recognition as a state language. Students and intellectuals became central to the movement.",
+    "location": {
+      "name": "Dhaka",
+      "present_day": "Bangladesh"
+    },
+    "importance": "major"
+  },
+  {
+    "id": "1952-language-movement",
+    "year": 1952,
+    "date": "1952-02-21",
+    "date_precision": "day",
+    "title": "Bengali Language Movement of 1952",
+    "image_path": "",
+    "categories": ["bengali_language", "bengali_people", "politics"],
+    "description": "Students and activists in Dhaka protested for recognition of Bengali as a state language of Pakistan. Police opened fire on demonstrators, making 21 February a defining date in Bengali linguistic history.",
+    "location": {
+      "name": "Dhaka",
+      "present_day": "Bangladesh"
+    },
+    "importance": "major"
+  },
+  {
+    "id": "1954-united-front-election",
+    "year": 1954,
+    "date_precision": "year",
+    "title": "United Front wins East Bengal election",
+    "image_path": "",
+    "categories": ["bengali_people", "bengal_region", "politics"],
+    "description": "The United Front won a decisive victory in the East Bengal legislative election. The result demonstrated strong support for regional political demands within East Pakistan.",
+    "location": {
+      "name": "East Bengal",
+      "present_day": "Bangladesh"
+    },
+    "importance": "major"
+  },
+  {
+    "id": "1956-bengali-state-language",
+    "year": 1956,
+    "date": "1956-02-29",
+    "date_precision": "day",
+    "title": "Bengali recognised as a state language of Pakistan",
+    "image_path": "",
+    "categories": ["bengali_language", "bengali_people", "politics"],
+    "description": "Pakistan's constitution recognised Bengali alongside Urdu as a state language. The recognition followed years of political and cultural mobilisation around Bengali language rights.",
+    "location": {
+      "name": "Pakistan",
+      "present_day": "Pakistan and Bangladesh"
+    },
+    "importance": "major"
+  },
+  {
+    "id": "1961-silchar-language-movement",
+    "year": 1961,
+    "date": "1961-05-19",
+    "date_precision": "day",
+    "title": "Bengali Language Movement in Silchar",
+    "image_path": "",
+    "categories": ["bengali_language", "bengali_people", "social_history"],
+    "description": "Bengali-speaking protesters in Silchar demonstrated over the official use of Bengali. Eleven people were killed in police firing, and Bengali subsequently received official recognition in the Barak Valley.",
+    "location": {
+      "name": "Silchar",
+      "present_day": "Assam, India"
+    },
+    "importance": "major"
+  },
+  {
+    "id": "1966-six-point-movement",
+    "year": 1966,
+    "date": "1966-02-05",
+    "date_precision": "day",
+    "title": "Six-Point Movement",
+    "image_path": "",
+    "categories": ["bengali_people", "politics", "bengal_region"],
+    "description": "Sheikh Mujibur Rahman presented the Six-Point Programme demanding extensive autonomy for East Pakistan. It became a major milestone in the development of Bengali political nationalism.",
+    "location": {
+      "name": "Lahore",
+      "present_day": "Pakistan"
+    },
+    "people": ["sheikh-mujibur-rahman"],
+    "importance": "major"
+  },
+  {
+    "id": "1969-mass-uprising-east-pakistan",
+    "year": 1969,
+    "date_precision": "year",
+    "title": "Mass Uprising of 1969",
+    "image_path": "",
+    "categories": ["bengali_people", "politics", "bengal_region"],
+    "description": "A mass uprising spread across East Pakistan against the Ayub Khan regime. The movement strengthened Bengali political mobilisation and contributed to the collapse of Ayub Khan's rule.",
+    "location": {
+      "name": "East Pakistan",
+      "present_day": "Bangladesh"
+    },
+    "people": ["sheikh-mujibur-rahman"],
+    "importance": "major"
+  },
+  {
+    "id": "1970-election-east-pakistan",
+    "year": 1970,
+    "date": "1970-12-07",
+    "date_precision": "day",
+    "title": "Pakistan general election",
+    "image_path": "",
+    "categories": ["bengali_people", "politics", "bengal_region"],
+    "description": "The Awami League won a majority of seats in Pakistan's National Assembly, largely through its overwhelming support in East Pakistan. The transfer of power did not occur, leading to a major political crisis.",
+    "location": {
+      "name": "East Pakistan",
+      "present_day": "Bangladesh"
+    },
+    "people": ["sheikh-mujibur-rahman"],
+    "importance": "major"
+  },
+  {
+    "id": "1971-march-7-speech",
+    "year": 1971,
+    "date": "1971-03-07",
+    "date_precision": "day",
+    "title": "7 March Speech",
+    "image_path": "",
+    "categories": ["bengali_people", "politics", "bengal_region", "culture"],
+    "description": "Sheikh Mujibur Rahman delivered a landmark speech at the Ramna Race Course in Dhaka during the political crisis in East Pakistan. The speech became a defining moment in the history of Bengali nationalism.",
+    "location": {
+      "name": "Dhaka",
+      "present_day": "Bangladesh"
+    },
+    "people": ["sheikh-mujibur-rahman"],
+    "importance": "major"
+  },
+  {
+    "id": "1971-operation-searchlight",
+    "year": 1971,
+    "date": "1971-03-25",
+    "date_precision": "day",
+    "title": "Operation Searchlight",
+    "image_path": "",
+    "categories": ["bengali_people", "bengal_region", "war", "politics"],
+    "description": "The Pakistan Army launched a military operation in East Pakistan on 25 March. The crackdown marked the beginning of widespread violence and the armed conflict that became the Bangladesh Liberation War.",
+    "location": {
+      "name": "Dhaka",
+      "present_day": "Bangladesh"
+    },
+    "importance": "major"
+  },
+  {
+    "id": "1971-bangladesh-independence",
+    "year": 1971,
+    "date": "1971-03-26",
+    "date_precision": "day",
+    "title": "Declaration of Bangladesh's Independence",
+    "image_path": "",
+    "categories": ["bengali_people", "bengali_language", "bengal_region", "independence"],
+    "description": "Bangladesh's independence was proclaimed in the context of the military crackdown and political crisis in East Pakistan. The declaration marked the beginning of the country's formal struggle for independence.",
+    "location": {
+      "name": "East Pakistan",
+      "present_day": "Bangladesh"
+    },
+    "people": ["sheikh-mujibur-rahman"],
+    "importance": "major"
+  },
+  {
+    "id": "1971-liberation-war",
+    "year": 1971,
+    "date_precision": "year",
+    "title": "Bangladesh Liberation War",
+    "image_path": "",
+    "categories": ["bengali_people", "bengali_language", "bengal_region", "war", "independence"],
+    "description": "A nine-month war followed the political and military crisis in East Pakistan. The conflict involved Bengali resistance forces, Pakistani forces and Indian military intervention, ending with the creation of Bangladesh.",
+    "location": {
+      "name": "Bangladesh",
+      "present_day": "Bangladesh"
+    },
+    "people": ["sheikh-mujibur-rahman"],
+    "importance": "major"
+  },
+  {
+    "id": "1971-bangladesh-victory",
+    "year": 1971,
+    "date": "1971-12-16",
+    "date_precision": "day",
+    "title": "Victory and creation of Bangladesh",
+    "image_path": "",
+    "categories": ["bengali_people", "bengali_language", "bengal_region", "independence"],
+    "description": "Pakistani forces in East Pakistan surrendered on 16 December. Bangladesh emerged as an independent sovereign state with Bengali language and culture at the centre of its national identity.",
+    "location": {
+      "name": "Dhaka",
+      "present_day": "Bangladesh"
+    },
+    "importance": "major"
+  },
+  {
+    "id": "1972-bangladesh-constitution",
+    "year": 1972,
+    "date": "1972-11-04",
+    "date_precision": "day",
+    "title": "Constitution of Bangladesh adopted",
+    "image_path": "",
+    "categories": ["bengali_people", "bengali_language", "politics"],
+    "description": "Bangladesh's Constitution was adopted by the Constituent Assembly. Bengali was established as the state language, reflecting the central role of language in the country's political identity.",
+    "location": {
+      "name": "Dhaka",
+      "present_day": "Bangladesh"
+    },
+    "importance": "major"
+  },
+  {
+    "id": "1974-bangladesh-united-nations",
+    "year": 1974,
+    "date": "1974-09-17",
+    "date_precision": "day",
+    "title": "Bangladesh joins the United Nations",
+    "image_path": "",
+    "categories": ["bengal_region", "bengali_people", "international_history"],
+    "description": "Bangladesh was admitted to the United Nations as a member state. Its admission marked an important step in the international recognition of the new Bengali-majority country.",
+    "location": {
+      "name": "United Nations",
+      "present_day": "New York, USA"
+    },
+    "importance": "major"
+  },
+  {
+    "id": "1975-sheikh-mujibur-assassination",
+    "year": 1975,
+    "date": "1975-08-15",
+    "date_precision": "day",
+    "title": "Assassination of Sheikh Mujibur Rahman",
+    "image_path": "",
+    "categories": ["bengali_people", "bengal_region", "politics"],
+    "description": "Sheikh Mujibur Rahman, the founding leader of Bangladesh, was assassinated in a military coup. The event marked a major political rupture in the country's early history.",
+    "location": {
+      "name": "Dhaka",
+      "present_day": "Bangladesh"
+    },
+    "people": ["sheikh-mujibur-rahman"],
+    "importance": "major"
+  },
+  {
+    "id": "1976-kazi-nazrul-death",
+    "year": 1976,
+    "date": "1976-08-29",
+    "date_precision": "day",
+    "title": "Death of Kazi Nazrul Islam",
+    "image_path": "",
+    "categories": ["bengali_people", "bengali_language", "literature", "culture"],
+    "description": "Kazi Nazrul Islam died in Dhaka after spending the final years of his life in Bangladesh. He remains one of the most influential figures in Bengali poetry, music and cultural history.",
+    "location": {
+      "name": "Dhaka",
+      "present_day": "Bangladesh"
+    },
+    "people": ["kazi-nazrul-islam"],
+    "importance": "major"
+  },
+  {
+    "id": "1987-bangla-language-act",
+    "year": 1987,
+    "date": "1987-03-08",
+    "date_precision": "day",
+    "title": "Bangla Language Implementation Act",
+    "image_path": "",
+    "categories": ["bengali_language", "bengali_people", "politics"],
+    "description": "Bangladesh enacted legislation requiring Bangla to be used in government offices, courts and other official functions. The law strengthened the institutional position of Bengali in the country.",
+    "location": {
+      "name": "Dhaka",
+      "present_day": "Bangladesh"
+    },
+    "importance": "significant"
+  },
+  {
+    "id": "1990-mass-uprising-bangladesh",
+    "year": 1990,
+    "date_precision": "year",
+    "title": "Mass Uprising against Ershad",
+    "image_path": "",
+    "categories": ["bengali_people", "politics", "bengal_region"],
+    "description": "A broad-based mass movement led to the resignation of President H. M. Ershad. The uprising became a major turning point in Bangladesh's transition toward parliamentary democracy.",
+    "location": {
+      "name": "Dhaka",
+      "present_day": "Bangladesh"
+    },
+    "importance": "major"
+  },
+  {
+    "id": "1991-bangladesh-parliamentary-democracy",
+    "year": 1991,
+    "date_precision": "year",
+    "title": "Parliamentary democracy restored in Bangladesh",
+    "image_path": "",
+    "categories": ["bengali_people", "politics", "bengal_region"],
+    "description": "Following the 1990 mass uprising, parliamentary government was restored through constitutional change and national elections. Bangladesh entered a new phase of competitive parliamentary politics.",
+    "location": {
+      "name": "Bangladesh",
+      "present_day": "Bangladesh"
+    },
+    "importance": "major"
+  },
+  {
+    "id": "1999-international-mother-language-day",
+    "year": 1999,
+    "date": "1999-11-17",
+    "date_precision": "day",
+    "title": "International Mother Language Day proclaimed",
+    "image_path": "",
+    "categories": ["bengali_language", "bengali_people", "global_history", "culture"],
+    "description": "UNESCO proclaimed 21 February as International Mother Language Day. The date commemorates the Bengali Language Movement and has become an international observance promoting linguistic and cultural diversity.",
+    "location": {
+      "name": "Paris",
+      "present_day": "France"
+    },
+    "importance": "major"
+  },
+  {
+    "id": "2011-west-bengal-political-transition",
+    "year": 2011,
+    "date_precision": "year",
+    "title": "Political transition in West Bengal and TMC era starts",
+    "image_path": "",
+    "categories": ["bengal_region", "bengali_people", "politics"],
+    "description": "The 2011 West Bengal Assembly election ended more than three decades of uninterrupted Left Front government in the state. The change marked a major political transition in contemporary West Bengal.",
+    "location": {
+      "name": "West Bengal",
+      "present_day": "India"
+    },
+    "importance": "major"
+  }
+]
